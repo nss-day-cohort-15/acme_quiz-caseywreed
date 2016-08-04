@@ -8,30 +8,30 @@
         },
         "spark_fountain": {
             "id": 1,
-            "type": 1,
+            "type": 0,
             "name": "Fountain of Sparks",
-            "description": "Light the fuse, watch the shower, protect your children. Only for professional uses"
+            "description": "Light the fuse, watch the shower, protect your children."
         },
         "m_80": {
             "id": 2,
-            "type": 2,
+            "type": 0,
             "name": "M-80",
             "description": "High powered minibomb that will get you dragged in by the fuzz"
         },
         "dynamite": {
             "id": 3,
-            "type": 3,
+            "type": 1,
             "name": "Dynamite",
             "description": "A single stick of powerful dynamite. Coyotes beware."
         },
         "c4": {
-            "id": 4,
+            "id": 1,
             "type": 4,
             "name": "C4",
             "description": "A bundled mass of explosives used by the FBI, CIA, and other alien-led government entities"
         },
         "fat_man": {
-            "id": 5,
+            "id": 1,
             "type": 5,
             "name": "Fat Man",
             "description": "One of two atom bombs used by the United States. No longer in-stock"

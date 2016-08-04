@@ -1,10 +1,13 @@
 var AcmeStore = (function(acmestore){
 
+  document.getElementById("mainButton").addEventListener("click", function () { acmestore.loadProducts() } )
+
   var categories;
   var types;
   var products;
 
   acmestore.loadProducts = function () {
+    console.log("loadProducts is running")
     Promise.all([
       $.getJSON('categories.json'),
       $.getJSON('types.json'),
@@ -21,5 +24,3 @@ var AcmeStore = (function(acmestore){
   return acmestore
 
 })(AcmeStore || {})
-
-AcmeStore.loadProducts()

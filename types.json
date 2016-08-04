@@ -9,31 +9,8 @@
         {
             "id": 1,
             "category": 0,
-            "name": "commercial",
+            "name": "professional",
             "description": "Fireworks intended for large-scale events and professional use"
-        },
-        {
-            "id": 2,
-            "category": 0,
-            "name": "illegal",
-            "description": "Illegal fireworks to be confiscated by authorities"
-        },
-        {   "id": 3,
-            "category": 1,
-            "name": "small-scale",
-            "description": "Demolition materials for small-scale jobs"
-        },
-        {
-            "id": 4,
-            "category": 1,
-            "name": "medium-scale",
-            "description": "Explosives used for medium-sized jobs like buildings or walls"
-        },
-        {
-            "id": 5,
-            "category": 1,
-            "name": "large-scale",
-            "description": "Mostly nuclear weapons"
         }
     ]
 }
