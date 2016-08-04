@@ -8,9 +8,9 @@
         },
         {
             "id": 1,
-            "category": 0,
+            "category": 1,
             "name": "professional",
-            "description": "Fireworks intended for large-scale events and professional use"
+            "description": "Demolition tools used for manly, American work"
         }
     ]
 }

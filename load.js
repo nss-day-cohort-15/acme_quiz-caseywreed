@@ -16,7 +16,7 @@ var AcmeStore = (function(acmestore){
     .then(function (res) {
       categories = res[0].categories
       types = res[1].types
-      products = res[2].products
+      products = res[2].products[0]
       acmestore.pickCategory(categories, types, products)
     })
   }
