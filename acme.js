@@ -1,32 +1,25 @@
 var AcmeStore = (function(acmestore){
 
+    //Selects whether to display Fireworks or Demolitions
+
     acmestore.pickCategory = function (categories, types, products) {
 
         var userOptionSelection = document.getElementById("optionBar").value
-        var selectedProducts = []
 
         if (userOptionSelection === "fireworks") {
             console.log("fireworks is selected")
-            for (key in products) {
-                if (products[key].type >= 0 && products[key].type < 3) {
-                    selectedProducts.push(products[key])
-                }
-            }
-            acmestore.fireworksSelection(categories, types, selectedProducts)
+            acmestore.fireworksSelection(categories, types, products)
         }
         if (userOptionSelection === "demolition") {
             console.log("demolition is selected")
-            for (key in products) {
-                if (products[key].type >= 3 && products[key].type < 6) {
-                    selectedProducts.push(products[key])
-                }
-            }
-            acmestore.demolitionsSelection(categories, types, selectedProducts)
+            acmestore.demolitionsSelection(categories, types, products)
         }
-            return selectedProducts
         },
+
         //Renders items to the DOM
-        acmestore.renderProducts = function () {}
+        acmestore.renderProducts = function (products) {
+            console.log(products)
+        }
 
         return acmestore
 

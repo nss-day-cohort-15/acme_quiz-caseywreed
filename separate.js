@@ -1,24 +1,26 @@
 var AcmeStore = (function(acmestore){
 
-    acmestore.fireworksSelection = function (categories, types, selectedProducts) {
+    acmestore.fireworksSelection = function (categories, types, products) {
         console.log("fireworksSelection is running")
 
         var personalArr = []
         var professionalArr = []
         var illegalArr = []
 
-        for (key in selectedProducts) {
-            if (selectedProducts[key].type === 0) {
-                personalArr.push(selectedProducts[key])
+        var selectedFireworks = [personalArr, professionalArr, illegalArr]
+
+        for (key in products) {
+            if (products[key].type === 0) {
+                personalArr.push(products[key])
             }
-            if (selectedProducts[key].type === 1) {
-                professionalArr.push(selectedProducts[key])
+            if (products[key].type === 1) {
+                professionalArr.push(products[key])
             }
-            if (selectedProducts[key].type === 2) {
-                illegalArr.push(selectedProducts[key])
+            if (products[key].type === 2) {
+                illegalArr.push(products[key])
             }
         }
-        acmestore.renderProducts(personalArr, professionalArr, illegalArr)
+        acmestore.renderProducts(selectedFireworks)
     }
 
     acmestore.demolitionsSelection = function (categories, types, selectedProducts) {
@@ -28,18 +30,20 @@ var AcmeStore = (function(acmestore){
         var mediumScaleArr = []
         var largeScaleArr = []
 
-        for (key in selectedProducts) {
-            if (selectedProducts[key].type === 3) {
-                smallScaleArr.push(selectedProducts[key])
+        var selectedDemolitions = [smallScaleArr, mediumScaleArr, largeScaleArr]
+
+        for (key in products) {
+            if (products[key].type === 3) {
+                smallScaleArr.push(products[key])
             }
-            if (selectedProducts[key].type === 4) {
-                mediumScaleArr.push(selectedProducts[key])
+            if (products[key].type === 4) {
+                mediumScaleArr.push(products[key])
             }
-            if (selectedProducts[key].type === 5) {
-                largeScaleArr.push(selectedProducts[key])
+            if (products[key].type === 5) {
+                largeScaleArr.push(products[key])
             }
         }
-        acmestore.renderProducts(smallScaleArr, mediumScaleArr, largeScaleArr)
+        acmestore.renderProducts(selectedDemolitions)
     }
 
     return acmestore
