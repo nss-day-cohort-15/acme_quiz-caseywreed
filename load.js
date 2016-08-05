@@ -1,6 +1,6 @@
 var AcmeStore = (function(acmestore){
 
-    document.getElementById("mainButton").addEventListener("click", function () { acmestore.loadProducts() } )
+    $("#mainButton").on("click", function () { acmestore.loadProducts() } )
 
     var categories;
     var types;

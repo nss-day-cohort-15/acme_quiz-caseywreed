@@ -4,23 +4,37 @@ var AcmeStore = (function(acmestore){
 
     acmestore.pickCategory = function (categories, types, products) {
 
-        var userOptionSelection = document.getElementById("optionBar").value
+        var userOptionSelection = $("#optionBar").val()
 
         if (userOptionSelection === "fireworks") {
-            console.log("fireworks is selected")
             acmestore.fireworksSelection(categories, types, products)
         }
         if (userOptionSelection === "demolition") {
-            console.log("demolition is selected")
             acmestore.demolitionsSelection(categories, types, products)
         }
-        },
+    },
 
         //Renders items to the DOM
-        acmestore.renderProducts = function (products) {
-            console.log(products)
-        }
+    acmestore.renderProducts = function (products) {
+        console.log("renderProducts is running")
+        console.log(products)
 
-        return acmestore
+        //Nested forEach loops dig into each product array and then their individual products
+        products.forEach( function (productArr) {
+            // Loop over each array and make a div with a class of the array's "type" I guess??? Really close
+            // $(#results).append(`###`)
+            productArr.forEach( function (product) {
+                $("#results").append(
+                    `<div class="col-md-3 card">
+                    <h1>${product.name}</h1>
+                    <p>${product.description}</p>
+                    </div>`)
+
+            })
+        })
+
+    }
+
+    return acmestore
 
 })(AcmeStore || {})

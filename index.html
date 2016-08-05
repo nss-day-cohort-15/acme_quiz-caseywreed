@@ -7,16 +7,19 @@
 </head>
 <body>
 
-<div>
-    <select name="categoryOption" id="optionBar">
-        <option value="fireworks" name="categorySelection" selected>Fireworks</option>
-        <option value="demolition" name="categorySelection">Demolition</option>
-    </select>
-    <button id="mainButton">See Some Products</button>
+<div class="container">
+
+    <div>
+        <select name="categoryOption" id="optionBar">
+            <option value="fireworks" name="categorySelection" selected>Fireworks</option>
+            <option value="demolition" name="categorySelection">Demolition</option>
+        </select>
+        <button id="mainButton">See Some Products</button>
+    </div>
+
+    <div id="results" class="row"></div>
+
 </div>
-
-<div id="results" class="row"></div>
-
 
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="acme.js"></script>

@@ -23,7 +23,7 @@ var AcmeStore = (function(acmestore){
         acmestore.renderProducts(selectedFireworks)
     }
 
-    acmestore.demolitionsSelection = function (categories, types, selectedProducts) {
+    acmestore.demolitionsSelection = function (categories, types, products) {
         console.log("fireworksSelection is running")
 
         var smallScaleArr = []
