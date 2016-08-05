@@ -8,7 +8,7 @@ var AcmeStore = (function(acmestore){
         if (userOptionSelection === "fireworks") {
             console.log("fireworks is selected")
             for (key in products) {
-                if (products[key].type === 0) {
+                if (products[key].type >= 0 && products[key].type < 3) {
                     selectedProducts.push(products[key])
                 }
             }
@@ -17,7 +17,7 @@ var AcmeStore = (function(acmestore){
         if (userOptionSelection === "demolition") {
             console.log("demolition is selected")
             for (key in products) {
-                if (products[key].type === 1) {
+                if (products[key].type >= 3 && products[key].type < 6) {
                     selectedProducts.push(products[key])
                 }
             }
@@ -26,7 +26,7 @@ var AcmeStore = (function(acmestore){
             return selectedProducts
         },
         //Renders items to the DOM
-        acmestore.renderItems = function () {}
+        acmestore.renderProducts = function () {}
 
         return acmestore
 
