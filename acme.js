@@ -23,7 +23,6 @@ var AcmeStore = (function(acmestore){
             }
             acmestore.demolitionsSelection(categories, types, selectedProducts)
         }
-            console.log(selectedProducts)
             return selectedProducts
         },
         //Renders items to the DOM

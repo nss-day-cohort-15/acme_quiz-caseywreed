@@ -1,38 +1,110 @@
 {
     "products": [{
-        "fairy_sparklers": {
+        "fairy_sparklers1": {
             "id": 0,
             "type": 0,
-            "name": "Fairy Sparklers",
+            "name": "Fairy Sparklers #1",
             "description": "Multi-colored sparklers that are safe for any age."
         },
-        "spark_fountain": {
+        "fairy_sparklers2": {
             "id": 1,
             "type": 0,
-            "name": "Fountain of Sparks",
-            "description": "Light the fuse, watch the shower, protect your children."
+            "name": "Fairy Sparklers #2",
+            "description": "Multi-colored sparklers that are safe for any age."
         },
-        "m_80": {
+        "fairy_sparklers3": {
             "id": 2,
             "type": 0,
+            "name": "Fairy Sparklers #3",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        "mortar_shells1": {
+            "id": 3,
+            "type": 1,
+            "name": "Mortar Shell Fireworks #1",
+            "description": "Load the tube, watch the explosions, protect your children."
+        },
+        "mortar_shells2": {
+            "id": 4,
+            "type": 1,
+            "name": "Mortar Shell Fireworks #1",
+            "description": "Load the tube, watch the explosions, protect your children."
+        },
+        "mortar_shells3": {
+            "id": 5,
+            "type": 0,
+            "name": "Mortar Shell Fireworks #1",
+            "description": "Load the tube, watch the explosions, protect your children."
+        },
+        "m_80_1": {
+            "id": 6,
+            "type": 3,
             "name": "M-80",
             "description": "High powered minibomb that will get you dragged in by the fuzz"
         },
-        "dynamite": {
-            "id": 3,
-            "type": 1,
+        "m_80_2": {
+            "id": 7,
+            "type": 3,
+            "name": "M-80",
+            "description": "High powered minibomb that will get you dragged in by the fuzz"
+        },
+        "m_80_3": {
+            "id": 8,
+            "type": 3,
+            "name": "M-80",
+            "description": "High powered minibomb that will get you dragged in by the fuzz"
+        },
+        "dynamite1": {
+            "id": 9,
+            "type": 4,
             "name": "Dynamite",
             "description": "A single stick of powerful dynamite. Coyotes beware."
         },
-        "c4": {
-            "id": 4,
-            "type": 1,
+        "dynamite2": {
+            "id": 10,
+            "type": 4,
+            "name": "Dynamite",
+            "description": "A single stick of powerful dynamite. Coyotes beware."
+        },
+        "dynamite3": {
+            "id": 11,
+            "type": 4,
+            "name": "Dynamite",
+            "description": "A single stick of powerful dynamite. Coyotes beware."
+        },
+        "c4_1": {
+            "id": 12,
+            "type": 5,
             "name": "C4",
             "description": "A bundled mass of explosives used by the FBI, CIA, and other alien-led government entities"
         },
-        "fat_man": {
-            "id": 5,
-            "type": 1,
+        "c4_2": {
+            "id": 13,
+            "type": 5,
+            "name": "C4",
+            "description": "A bundled mass of explosives used by the FBI, CIA, and other alien-led government entities"
+        },
+        "c4_3": {
+            "id": 14,
+            "type": 5,
+            "name": "C4",
+            "description": "A bundled mass of explosives used by the FBI, CIA, and other alien-led government entities"
+        },
+        "fat_man1": {
+            "id": 15,
+            "type": 6,
+            "name": "Fat Man",
+            "description": "One of two atom bombs used by the United States. No longer in-stock"
+        },
+        "fat_man2": {
+            "id": 16,
+            "type": 6,
+            "name": "Fat Man",
+            "description": "One of two atom bombs used by the United States. No longer in-stock"
+        },
+        "fat_man3": {
+            "id": 17,
+            "type": 6,
             "name": "Fat Man",
             "description": "One of two atom bombs used by the United States. No longer in-stock"
         }

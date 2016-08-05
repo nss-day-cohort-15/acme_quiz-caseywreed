@@ -8,9 +8,33 @@
         },
         {
             "id": 1,
-            "category": 1,
+            "category": 0,
             "name": "professional",
-            "description": "Demolition tools used for manly, American work"
+            "description": "Commercial grade fireworks. For professional use only."
+        },
+        {
+            "id": 2,
+            "category": 0,
+            "name": "illegal",
+            "description": "Illegal fireworks that will get you dragged in by the cops"
+        },
+        {
+            "id": 0,
+            "category": 1,
+            "name": "small_scale",
+            "description": "Small-scale demlotion materials used for household explosions"
+        },
+        {
+            "id": 1,
+            "category": 1,
+            "name": "medium_scale",
+            "description": "Demolition materials for destroying houses or arch-enemies"
+        },
+        {
+            "id": 2,
+            "category": 1,
+            "name": "large_scale",
+            "description": "Large-scale demoltion items. Mostly nuclear weapons."
         }
     ]
 }
