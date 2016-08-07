@@ -15,24 +15,23 @@ var AcmeStore = (function(acmestore){
     },
 
         //Renders items to the DOM
-    acmestore.renderProducts = function (products) {
+    acmestore.renderProducts = function (categories, types, products) {
+        outputEl = $("#results")
+        outputEl.html("")
         console.log("renderProducts is running")
         console.log(products)
 
         //Nested forEach loops dig into each product array and then their individual products
-        products.forEach( function (productArr) {
-            // Loop over each array and make a div with a class of the array's "type" I guess??? Really close
-            // $(#results).append(`###`)
-            productArr.forEach( function (product) {
-                $("#results").append(
-                    `<div class="col-md-3 card">
-                    <h1>${product.name}</h1>
-                    <p>${product.description}</p>
-                    </div>`)
+        products.forEach( function (product) {
+            outputEl.append(
+                `<div class="col-md-3 card">
+                <h1>${product.name}</h1>
+                <p>${product.description}</p>
+                <p>Find this in the ${types[product.type].name} section of the
+                ${categories[types[product.type].category].name} aisle</p>
+                </div>`)
 
-            })
         })
-
     }
 
     return acmestore
