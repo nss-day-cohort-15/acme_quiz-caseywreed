@@ -3,37 +3,37 @@
         {
             "id": 0,
             "category": 0,
-            "name": "personal",
+            "name": "Personal",
             "description": "Fireworks intended for recreational use during holiday celebrations"
         },
         {
             "id": 1,
             "category": 0,
-            "name": "professional",
+            "name": "Professional",
             "description": "Commercial grade fireworks. For professional use only."
         },
         {
             "id": 2,
             "category": 0,
-            "name": "illegal",
+            "name": "Illegal",
             "description": "Illegal fireworks that will get you dragged in by the cops"
         },
         {
             "id": 3,
             "category": 1,
-            "name": "small_scale",
+            "name": "Small Scale",
             "description": "Small-scale demlotion materials used for household explosions"
         },
         {
             "id": 4,
             "category": 1,
-            "name": "medium_scale",
+            "name": "Medium Scale",
             "description": "Demolition materials for destroying houses or arch-enemies"
         },
         {
             "id": 5,
             "category": 1,
-            "name": "large_scale",
+            "name": "Large Scale",
             "description": "Large-scale demoltion items. Mostly nuclear weapons."
         }
     ]
