@@ -1,7 +1,6 @@
 var AcmeStore = (function(acmestore){
 
     //Selects whether to display Fireworks or Demolitions
-
     acmestore.pickCategory = function (categories, types, products) {
 
         var userOptionSelection = $("#optionBar").val()
@@ -14,21 +13,18 @@ var AcmeStore = (function(acmestore){
         }
     },
 
-        //Renders items to the DOM
+    //Renders items to the DOM
     acmestore.renderProducts = function (categories, types, products) {
         outputEl = $("#results")
         outputEl.html("")
-        console.log("renderProducts is running")
-        console.log(products)
 
-        //Nested forEach loops dig into each product array and then their individual products
         products.forEach( function (product) {
             outputEl.append(
                 `<div class="col-md-3 card">
                 <h1>${product.name}</h1>
                 <p>${product.description}</p>
-                <p>Find this in the ${types[product.type].name} section of the
-                ${categories[types[product.type].category].name} aisle</p>
+                <p>Find this in the <span class="bold">${types[product.type].name}</span> section of the
+                <span class="bold">${categories[types[product.type].category].name}</span> aisle</p>
                 </div>`)
 
         })

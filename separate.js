@@ -1,7 +1,6 @@
 var AcmeStore = (function(acmestore){
 
     acmestore.fireworksSelection = function (categories, types, products) {
-        console.log("fireworksSelection is running")
 
         var selectedFireworks = []
 
@@ -14,7 +13,6 @@ var AcmeStore = (function(acmestore){
     }
 
     acmestore.demolitionsSelection = function (categories, types, products) {
-        console.log("fireworksSelection is running")
 
         var selectedDemolitions = []
 
