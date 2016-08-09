@@ -1,4 +1,13 @@
 var AcmeStore = (function(acmestore){
+    containerEl = $(".container")
+    containerEl.prepend(
+        `<div>
+            <select name="categoryOption" id="optionBar">
+                <option value="fireworks" name="categorySelection" selected>Fireworks</option>
+                <option value="demolition" name="categorySelection">Demolition</option>
+            </select>
+            <button id="mainButton">See Some Products</button>
+        </div>`)
 
     $("#mainButton").on("click", function () { acmestore.loadProducts() } )
 
@@ -7,7 +16,6 @@ var AcmeStore = (function(acmestore){
     var products;
 
     acmestore.loadProducts = function () {
-    console.log("loadProducts is running")
     Promise.all([
         $.getJSON('categories.json'),
         $.getJSON('types.json'),
